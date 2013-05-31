@@ -10,9 +10,23 @@
 
 	<?php else : ?>
 
-		<h1 class="title"><?php _e('Даного показника не знайденно', 'warp'); ?></h1>
-		<?php get_search_form(); ?>
+<!--  TDMU -->
 
+		<?php
+		if ( is_user_logged_in() ) {?>
+    		<h1 class="title"><center><?php _e('Даного показника не знайденно', 'warp'); ?></h1>
+		<?php get_search_form(); 
+		} else {			?>
+
+		<!-- 	<h1 class="title"><center>
+		<?php _e('Для перегляду інформації авторизуйтесь!', 'warp'); ?>
+		<br><br><a style='color:blue;' href='wp-login.php'>Вхід на сайт</a></center></h1> -->
+		<?php
+		}
+		
+		
+		?>
+<!--  TDMU -->
 	<?php endif; ?>
 
 </div>

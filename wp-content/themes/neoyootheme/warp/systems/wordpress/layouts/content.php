@@ -5,7 +5,13 @@
 * @copyright Copyright (C) YOOtheme GmbH
 * @license   YOOtheme Proprietary Use License (http://www.yootheme.com/license)
 */
-
+if (have_posts()==0)
+// ---------- TDMU ------------
+		if ( !is_user_logged_in()) {?>
+		<h1 class="title"><center><?php _e('Для перегляду інформації авторизуйтесь!', 'warp'); ?><br><br><a style='color:blue;' href='wp-login.php'>Вхід на сайт</a></center></h1>
+		<?php
+		}
+// ---------- TDMU ------------
 // output content from header/footer mode
 if ($this->has('content')) {
 	return $this->output('content');

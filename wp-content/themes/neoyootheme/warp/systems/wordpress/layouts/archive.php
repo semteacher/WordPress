@@ -32,10 +32,25 @@
 			<?php $userdata = get_userdatabylogin(get_query_var('author_name')); ?>
 			<h1 class="title"><?php printf(__("Sorry, but there aren't any posts by %s yet.", "warp"), $userdata->display_name); ?></h1>
 		<?php else : ?>
-			<h1 class="title"><?php _e("No posts found.", "warp"); ?></h1>
+
+<!--  TDMU -->
+			<!-- <h1 class="title"><?php _e("No posts found.", "warp"); ?></h1>-->   
+
+			<?php
+				if ( is_user_logged_in() ) {?>
+    				<h1 class="title"><center><?php _e('Даного показника не знайденно', 'warp'); ?></center></h1>
+				<?
+				} else {	?>
+
+				<!-- <h1 class="title"><center><?php _e('Для перегляду інформації авторизуйтесь!', 'warp'); ?><br><br><a style='color:blue;' href='wp-login.php'>Вхід на сайт</a></center></h1>-->
+				<?php
+				}
+		
+			?>
+<!--  TDMU -->
 		<?php endif; ?>
 		
-		<?php get_search_form(); ?>
+		<?php // get_search_form(); ?>
 
 	<?php endif; ?>
 
