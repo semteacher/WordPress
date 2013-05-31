@@ -326,7 +326,7 @@ div.mod-line ul.menu span.bg {
 	height: 30px;
 	line-height: 30px;
 	text-indent: 5px;
-	color: #858586;
+	color: black;
 	font-size: 14px;
 	text-shadow: 0px 1px 0px rgba(255,255,255,1);
 }
@@ -336,7 +336,7 @@ div.mod-line ul.menu a.current span.bg { font-weight: bold; }
 
  
 div.mod-line ul.menu a:hover span.bg,
-div.mod-line ul.menu span:hover span.bg { color: #3C3D3E; }
+div.mod-line ul.menu span:hover span.bg { color: red; }
 
  
 div.mod-line ul.menu a.level1,
@@ -373,8 +373,9 @@ div.mod-line ul.menu li.level2 { }
 div.mod-line ul.menu li.level2 a:hover { }
 
 div.mod-line ul.menu li.level2 span.bg {
-	height: 20px;
-	line-height: 20px;
+	//height: 40px;
+	margin-bottom:10px;
+	line-height: 14px;
 	text-indent: 15px;
 	font-size: 12px;
 	background: url(../images/submenu_level2_item.png) 0px 50px no-repeat;

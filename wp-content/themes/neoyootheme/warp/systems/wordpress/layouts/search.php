@@ -2,7 +2,7 @@
 
 	<?php if (have_posts()) : ?>
 
-		<h1 class="title"><?php _e('Search Results', 'warp'); ?></h1>
+		<h1 class="title"><?php _e('Пошук', 'warp'); ?></h1>
 		
 		<?php echo $this->render('_posts'); ?>
 
@@ -10,7 +10,7 @@
 
 	<?php else : ?>
 
-		<h1 class="title"><?php _e('No posts found. Try a different search?', 'warp'); ?></h1>
+		<h1 class="title"><?php _e('Даного показника не знайденно', 'warp'); ?></h1>
 		<?php get_search_form(); ?>
 
 	<?php endif; ?>

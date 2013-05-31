@@ -17,7 +17,7 @@ if ($position == 'search') : ?>
 <div id="searchbox">
 	<form action="<?php echo home_url( '/' ); ?>" method="get" role="search">
 		<button class="magnifier" type="submit" value="Search"></button>
-		<input type="text" value="" name="s" placeholder="<?php _e('search...', 'warp'); ?>" />
+		<input type="text" value="" name="s" placeholder="<?php _e('Пошук...', 'warp'); ?>" />
 		<button class="reset" type="reset" value="Reset"></button>
 	</form>
 </div>

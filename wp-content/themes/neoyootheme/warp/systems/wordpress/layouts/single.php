@@ -7,13 +7,13 @@
 		
 			<h1 class="title"><?php the_title(); ?></h1>
 
-			<p class="meta"><?php printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', get_the_date(), get_the_category_list(', ')); ?></p>
-
+			<!--<p class="meta"><?php printf(__('Written by %s on %s. Posted in %s', 'warp'), '<a href="'.get_author_posts_url(get_the_author_meta('ID')).'" title="'.get_the_author().'">'.get_the_author().'</a>', get_the_date(), get_the_category_list(', ')); ?></p>
+-->
 			<div class="content"><?php the_content(''); ?></div>
 
 			<?php the_tags('<p class="taxonomy">'.__('Tags: ', 'warp'), ', ', '</p>'); ?>
 
-			<?php edit_post_link(__('Edit this post.', 'warp'), '<p class="edit">','</p>'); ?>
+			<?php edit_post_link(__('Змінити', 'warp'), '<p class="edit">','</p>'); ?>
 			
 			<?php if (pings_open()) : ?>
 			<p class="trackback"><?php printf(__('<a href="%s">Trackback</a> from your site.', 'warp'), get_trackback_url()); ?></p>

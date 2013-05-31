@@ -28,7 +28,7 @@ ul.links li { background-image: url(../../images/variations/gradientblue/list_li
 #menu a.level3:hover span.bg { color: #164e78; }
 
 div.mod-line ul.menu li.level2 span.bg { background: url(../../images/variations/gradientblue/submenu_level2_item.png) 0px 50px no-repeat; }
-div.mod-line ul.menu li.level2 a:hover span.bg { color: #164e78; }
+div.mod-line ul.menu li.level2 a:hover span.bg { color: red; }
 
 /* modules */ 
 div.mod-glow-templatecolor div.box-1 { background-color: #46526A; }

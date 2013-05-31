@@ -201,11 +201,14 @@ table.calendar td {
 	padding: 0;
 	text-align: center;
 	line-height: 25px;
+
 }
 
 table.calendar td a {
 	display: block;
 	line-height: 25px;
+	font-weight: bold;
+	background: #e6e6e6;
 }
 
 table.calendar tbody td { background: #ffffff; }

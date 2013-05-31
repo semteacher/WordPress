@@ -5,13 +5,13 @@
 		<?php if (is_category()) : ?>
 			<?php /* <h1 class="title">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h1> */ ?>
 		<?php elseif (is_tag()) : ?>
-			<h1 class="title"><?php printf(__('Posts Tagged %s', 'warp'), '&#8216;'.single_tag_title('', false).'&#8217;'); ?></h1>
+			<h1 class="title"><?php printf(__('Публікації стосовно %s', 'warp'), '&#8216;'.single_tag_title('', false).'&#8217;'); ?></h1>
 		<?php elseif (is_day()) : ?>
-			<h1 class="title"><?php printf(__('Archive for %s', 'warp'), get_the_date()); ?></h1>
+			<h1 class="title"><?php printf(__('Архів даних  за %s', 'warp'), get_the_date()); ?></h1>
 		<?php elseif (is_month()) : ?>
-			<h1 class="title"><?php printf(__('Archive for %s', 'warp'), get_the_date('F, Y')); ?></h1>
+			<h1 class="title"><?php printf(__('Архів даних  за %s', 'warp'), get_the_date('F, Y')); ?></h1>
 		<?php elseif (is_year()) : ?>
-			<h1 class="title"><?php printf(__('Archive for %s', 'warp'), get_the_date('Y')); ?></h1>
+			<h1 class="title"><?php printf(__('Архів даних за %s', 'warp'), get_the_date('Y')); ?></h1>
 		<?php elseif (is_author()) : ?>
 			<h1 class="title"><?php _e('Author Archive', 'warp'); ?></h1>
 		<?php elseif (isset($_GET['paged']) && !empty($_GET['paged'])) : ?>
@@ -25,7 +25,7 @@
 	<?php else : ?>
 
 		<?php if (is_category()) : ?>
-			<h1 class="title"><?php printf(__("Sorry, but there aren't any posts in the %s category yet.", "warp"), single_cat_title('', false)); ?></h1>
+			<h1 class="title"><?php printf(__("", "warp"), single_cat_title('', false)); ?></h1>
 		<?php elseif (is_date()) : ?>
 			<h1 class="title"><?php _e("Sorry, but there aren't any posts with this date.", "warp"); ?></h1>
 		<?php elseif (is_author()) : ?>

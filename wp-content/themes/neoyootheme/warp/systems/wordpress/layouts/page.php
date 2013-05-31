@@ -9,7 +9,7 @@
 			
 			<div class="content"><?php the_content(''); ?></div>
 
-			<?php edit_post_link(__('Edit this post.', 'warp'), '<p class="edit">','</p>'); ?>
+			<?php edit_post_link(__('Змінити', 'warp'), '<p class="edit">','</p>'); ?>
 	
 		</div>
 		
