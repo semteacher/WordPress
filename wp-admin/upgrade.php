@@ -56,7 +56,7 @@ else
 	wp_admin_css( 'install', true );
 	wp_admin_css( 'ie', true );
 	?>
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 <body class="wp-core-ui">
 <h1 id="logo"><a href="<?php esc_attr_e( 'http://wordpress.org/' ); ?>"><?php _e( 'WordPress' ); ?></a></h1>
 

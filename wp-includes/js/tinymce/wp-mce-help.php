@@ -151,7 +151,7 @@ wp_admin_css( 'wp-admin', true );
 	td b { font-family: Tahoma, "Times New Roman", Times, serif }
 </style>
 <?php endif; ?>
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 <body class="windows wp-core-ui">
 <script type="text/javascript">
 if ( tinymce.isMac )

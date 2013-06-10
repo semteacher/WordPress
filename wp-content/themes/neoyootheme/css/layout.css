@@ -275,9 +275,10 @@ body.yoopage { background: #6996B0 url(../images/page_bg.png) 0 0 repeat-x; }
 
 #logo {
 	position: absolute;
-	left: 20px;
+	/*left: 20px;*/
 	top: 40px;
 	text-align: center;
+	width:100%;
 }
 
 #menubar {

@@ -157,13 +157,22 @@ function get_search_form($echo = true) {
 		require($search_form_template);
 		return;
 	}
+//---------------------------------MILKA tdmu
+	/*$form = '
+	
+	<form role="search" method="get" id="searchform" action="' . esc_url( home_url( '/' ) ) . '" >
+	<div><center><label class="screen-reader-text" for="s">Для перегляду аналітичних даних авторизуйтесь! </label></center>
+	<!-- <meta http-equiv= "Refresh" content="3; wp-login.php"> -->
+	</div>
+	</form>';*/
 
-	$form = '<form role="search" method="get" id="searchform" action="' . esc_url( home_url( '/' ) ) . '" >
+	$form = '<center><form role="search" method="get" id="searchform" action="' . esc_url( home_url( '/' ) ) . '" >
 	<div><label class="screen-reader-text" for="s">' . __('Search for:') . '</label>
 	<input type="text" value="' . get_search_query() . '" name="s" id="s" />
 	<input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
 	</div>
-	</form>';
+	</form></center>';
+//---------------------------------MILKA END tdmu
 
 	if ( $echo )
 		echo apply_filters('get_search_form', $form);
@@ -913,7 +922,11 @@ function wp_get_archives($args = '') {
 	}
 
 	//filters
-	$where = apply_filters( 'getarchives_where', "WHERE post_type = 'post' AND post_status = 'publish'", $r );
+	
+	//$where = apply_filters( 'getarchives_where', "WHERE post_type = 'post' AND post_status = 'publish'", $r );
+	
+	$where = apply_filters( 'getarchives_where', "WHERE post_type = 'post' AND (post_status = 'publish' OR post_status = 'private' OR post_status = 'inherit')", $r );//TDMU
+
 	$join = apply_filters( 'getarchives_join', '', $r );
 
 	$output = '';
@@ -1091,7 +1104,7 @@ function get_calendar($initial = true, $echo = true) {
 
 	// Quick check. If we have no posts at all, abort!
 	if ( !$posts ) {
-		$gotsome = $wpdb->get_var("SELECT 1 as test FROM $wpdb->posts WHERE post_type = 'post' AND post_status = 'publish' LIMIT 1");
+		$gotsome = $wpdb->get_var("SELECT 1 as test FROM $wpdb->posts WHERE post_type = 'post' AND (post_status = 'publish' OR post_status = 'private' OR post_status = 'inherit') LIMIT 1");//TDMU
 		if ( !$gotsome ) {
 			$cache[ $key ] = '';
 			wp_cache_set( 'get_calendar', $cache, 'calendar' );
@@ -1132,15 +1145,15 @@ function get_calendar($initial = true, $echo = true) {
 	$previous = $wpdb->get_row("SELECT MONTH(post_date) AS month, YEAR(post_date) AS year
 		FROM $wpdb->posts
 		WHERE post_date < '$thisyear-$thismonth-01'
-		AND post_type = 'post' AND post_status = 'publish'
+		AND post_type = 'post' AND (post_status = 'publish' OR post_status = 'private' OR post_status = 'inherit')
 			ORDER BY post_date DESC
-			LIMIT 1");
+			LIMIT 1");//TDMU
 	$next = $wpdb->get_row("SELECT MONTH(post_date) AS month, YEAR(post_date) AS year
 		FROM $wpdb->posts
 		WHERE post_date > '$thisyear-$thismonth-{$last_day} 23:59:59'
-		AND post_type = 'post' AND post_status = 'publish'
+		AND post_type = 'post' AND (post_status = 'publish' OR post_status = 'private' OR post_status = 'inherit')
 			ORDER BY post_date ASC
-			LIMIT 1");
+			LIMIT 1");//TDMU
 
 	/* translators: Calendar caption: 1: month name, 2: 4-digit year */
 	$calendar_caption = _x('%1$s %2$s', 'calendar caption');
@@ -1192,8 +1205,8 @@ function get_calendar($initial = true, $echo = true) {
 	// Get days with posts
 	$dayswithposts = $wpdb->get_results("SELECT DISTINCT DAYOFMONTH(post_date)
 		FROM $wpdb->posts WHERE post_date >= '{$thisyear}-{$thismonth}-01 00:00:00'
-		AND post_type = 'post' AND post_status = 'publish'
-		AND post_date <= '{$thisyear}-{$thismonth}-{$last_day} 23:59:59'", ARRAY_N);
+		AND post_type = 'post' AND (post_status = 'publish' OR post_status = 'private' OR post_status = 'inherit')
+		AND post_date <= '{$thisyear}-{$thismonth}-{$last_day} 23:59:59'", ARRAY_N);//TDMU
 	if ( $dayswithposts ) {
 		foreach ( (array) $dayswithposts as $daywith ) {
 			$daywithpost[] = $daywith[0];
@@ -1212,8 +1225,8 @@ function get_calendar($initial = true, $echo = true) {
 		."FROM $wpdb->posts "
 		."WHERE post_date >= '{$thisyear}-{$thismonth}-01 00:00:00' "
 		."AND post_date <= '{$thisyear}-{$thismonth}-{$last_day} 23:59:59' "
-		."AND post_type = 'post' AND post_status = 'publish'"
-	);
+		."AND post_type = 'post' AND (post_status = 'publish' OR post_status = 'private' OR post_status = 'inherit')"
+	);//TDMU
 	if ( $ak_post_titles ) {
 		foreach ( (array) $ak_post_titles as $ak_post_title ) {
 

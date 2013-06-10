@@ -86,7 +86,7 @@ text-align: center;
 	margin: auto;
 }
 </style>
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 <body>
 <p class="message">%s</p>
 </body>

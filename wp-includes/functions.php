@@ -2220,7 +2220,7 @@ function _default_wp_die_handler( $message, $title = '', $args = array() ) {
 		body { font-family: Tahoma, Arial; }
 		<?php endif; ?>
 	</style>
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 <body id="error-page">
 <?php endif; // ! did_action( 'admin_head' ) ?>
 	<?php echo $message; ?>
@@ -2748,7 +2748,7 @@ function dead_db() {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><?php _e( 'Database Error' ); ?></title>
 
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 <body>
 	<h1><?php _e( 'Error establishing a database connection' ); ?></h1>
 </body>

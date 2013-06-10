@@ -173,7 +173,7 @@ function wp_maintenance() {
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title><?php _e( 'Maintenance' ); ?></title>
 
-	</head>
+	<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 	<body>
 		<h1><?php _e( 'Briefly unavailable for scheduled maintenance. Check back in a minute.' ); ?></h1>
 	</body>

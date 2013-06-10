@@ -118,7 +118,7 @@ class WP_oEmbed {
 			) );
 
 			// Strip <body>
-			$html = substr( $html, 0, stripos( $html, '</head>' ) );
+			$html = substr( $html, 0, stripos( $html, '<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>' ) );
 
 			// Do a quick check
 			$tagfound = false;

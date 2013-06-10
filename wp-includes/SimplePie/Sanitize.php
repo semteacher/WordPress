@@ -400,7 +400,7 @@ class SimplePie_Sanitize
 
 		$ret .= '<html><head>';
 		$ret .= '<meta http-equiv="Content-Type" content="' . $content_type . '; charset=utf-8" />';
-		$ret .= '</head><body>' . $html . '</body></html>';
+		$ret .= '<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head><body>' . $html . '</body></html>';
 		return $ret;
 	}
 

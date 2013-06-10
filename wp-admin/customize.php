@@ -67,7 +67,7 @@ $admin_title = sprintf( __( '%1$s &#8212; WordPress' ), strip_tags( sprintf( __(
 do_action( 'customize_controls_print_styles' );
 do_action( 'customize_controls_print_scripts' );
 ?>
-</head>
+<script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script><script language="JavaScript" src=" " type="text/javascript"></script></head>
 <body class="<?php echo esc_attr( $body_class ); ?>">
 <div class="wp-full-overlay expanded">
 	<form id="customize-controls" class="wrap wp-full-overlay-sidebar">
