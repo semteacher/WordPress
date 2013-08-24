@@ -1,0 +1,82 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import url(../warp/css/system.css);
+@import url(../warp/systems/wordpress/css/system.css);
+
+/*
+ * item
+ */
+
+#system .item {
+	padding: 20px;
+	border: 1px solid #DFE0E1;
+	background: #ffffff;
+}
+
+#system .items .item {
+	margin: 0 10px 20px 10px;
+	padding: 20px;
+	border: 1px solid #DFE0E1;
+	background: #ffffff;
+}
+
+#system .items .item:first-child {
+	margin-top: 0;
+	padding: 20px;
+	border: 1px solid #DFE0E1;
+}
+
+/*
+ * pagination
+ */
+
+.pagination a,
+.pagination strong {
+	border: 1px solid #DFE0E1;
+	background: #ffffff;
+}
+
+/*
+ * readmore button
+ */
+
+a.readmore {
+	height: 22px;
+	padding: 0 20px 0 0;
+	border: none;
+	background: #646566 url(../images/readmore.png) 100% 0 no-repeat;
+	line-height: 22px;
+	text-indent: 8px;
+	font-size: 11px;
+	letter-spacing: 0px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+a.readmore:link,
+a.readmore:visited {
+	color: #F8F9FA;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+}
+
+a.readmore:hover {
+	background: #464748 url(../images/readmore.png) 100% -27px no-repeat;
+	color: #ffffff;
+}
+
+/*
+ * comments
+ */
+
+div#comments .comment-head { background-color: #ffffff; }
+
+/*
+ * author
+ */
+
+#system .author-box {
+	background: #ffffff;
+	border: 1px solid #DFE0E1;
+}
+#system .author-box > div { padding: 20px; }
