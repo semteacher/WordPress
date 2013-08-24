@@ -3,6 +3,16 @@
 	<div id="icon-options-general" class="icon32"><br /></div>
 	<h2>MobilePress Settings</h2>
 
+	<!--
+	<div id="message" class="updated fade">
+		<p>
+			<strong>Upgrade:</strong> MobilePress serves as a basic entry level mobile plugin for WordPress. If you would more
+			flexibility, mobile theme control and beautiful support for touch screen devices then consider an <a href="http://obox-design.com/mobilepress.cfm" target="_blank">upgrade to Obox Mobile.</a>
+
+		</p>
+	</div>
+	-->
+
 	<table class="form-table">
 		<tr>
 			<th scope="row">Front Page Display</th>
@@ -76,10 +86,22 @@
 	<p class="submit"><input type="submit" name="save" class="button-primary" value="Save Settings" /></p>
 	</form>
 
-	<h2>Did You Know?</h2>
-	<p>You can easily view your mobile theme in a web browser by visiting <em><a href="<?php bloginfo('siteurl'); ?>/?mobile"><?php bloginfo('siteurl'); ?>/?mobile</a></em>.</p>
-	<p>Remember, to view your normal blog theme again, simply visit <em><a href="<?php bloginfo('siteurl'); ?>/?nomobile"><?php bloginfo('siteurl'); ?>/?nomobile</a></em>.</p>
+	<h2>Upgrade to <a href="http://obox-design.com/mobilepress.cfm" target="_blank">Obox Mobile</a></h2>
+	<p>
+		MobilePress serves as a basic entry level mobile plugin for WordPress. It works just great on low end and feature phones.<br />
+		If you are looking for a more feature packed plugin with better theme control, smartphone and touch screen support<br />
+		and a beautiful default theme, then consider <a href="http://obox-design.com/mobilepress.cfm" target="_blank">upgrading to Obox Mobile.</a>
+	</p>
+
+	<h2>Mobile Theme Testing</h2>
+	<p>
+		You can easily view your mobile theme in a web browser by visiting <em><a href="<?php bloginfo('siteurl'); ?>/?mobile"><?php bloginfo('siteurl'); ?>/?mobile</a></em>.<br />
+		Remember, to view your normal blog theme again, simply visit <em><a href="<?php bloginfo('siteurl'); ?>/?nomobile"><?php bloginfo('siteurl'); ?>/?nomobile</a></em>.
+	</p>
+
 	<h2>Custom Themes</h2>
-	<p>Why not create a custom theme for your blog? Mobile themes are created in the same way as normal WordPress themes are created.</p>
-	<p>Simply upload your mobile themes to <code>/wp-content<?php echo $mopr_custom_themes; ?></code></p>
+	<p>
+		Why not create a custom theme for your blog? Mobile themes are created in the same way as normal WordPress themes are created.<br />
+		Simply upload your mobile themes to <code>/wp-content<?php echo $mopr_custom_themes; ?></code>
+	</p>
 </div>
