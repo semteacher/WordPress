@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Neo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-02 17:23+0100\n"
+"PO-Revision-Date: 2012-10-10 09:02+0200\n"
+"Last-Translator: Иван <kovaleuivan@gmail.com>\n"
+"Language-Team: morestyle.ru <support@morestyle.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"Language: Русский\n"
+
+#: layouts/404.php:3
+msgid "Error 404 - Not Found"
+msgstr "Ошибка 404 - Не Найдено "
+
+#: layouts/404.php:4
+msgid "The page you requested does not exist, or has been moved."
+msgstr "Запрашиваемая вами страница не существует, либо была перемещена."
+
+#: layouts/_pagination.php:43
+msgid "First"
+msgstr "Первый"
+
+#: layouts/_pagination.php:63
+msgid "Last"
+msgstr "Последний"
+
+#: layouts/_post.php:5 layouts/single.php:10
+#, php-format
+msgid "Written by %s on %s. Posted in %s"
+msgstr "Написано %s в %s. Добавлено в %s"
+
+#: layouts/_post.php:10
+msgid "Continue Reading"
+msgstr "Читать Далее"
+
+#: layouts/_post.php:11
+msgid "No Comments"
+msgstr "Нет Комментариев"
+
+#: layouts/_post.php:11
+msgid "1 Comment"
+msgstr "1 Комментарий"
+
+#: layouts/_post.php:11
+msgid "% Comments"
+msgstr "% Комментария(ев)"
+
+#: layouts/_post.php:14 layouts/single.php:14
+msgid "Tags: "
+msgstr "Метки: "
+
+#: layouts/_post.php:16 layouts/page.php:12 layouts/single.php:16
+msgid "Edit this post."
+msgstr "Редактировать эту запись."
+
+#: layouts/archive.php:8
+#, php-format
+msgid "Posts Tagged %s"
+msgstr "Записи с меткой %s"
+
+#: layouts/archive.php:10 layouts/archive.php:12 layouts/archive.php:14
+#, php-format
+msgid "Archive for %s"
+msgstr "Архив от %s"
+
+#: layouts/archive.php:16 layouts/author.php:3
+msgid "Author Archive"
+msgstr "Архив Автора "
+
+#: layouts/archive.php:18
+msgid "Blog Archives"
+msgstr "Архивы Блога "
+
+#: layouts/archive.php:28
+#, php-format
+msgid "Sorry, but there aren't any posts in the %s category yet."
+msgstr "Извините, но в рубрике %s еще нет записей."
+
+#: layouts/archive.php:30
+msgid "Sorry, but there aren't any posts with this date."
+msgstr "Извините, но нет записей с этой датой."
+
+#: layouts/archive.php:33
+#, php-format
+msgid "Sorry, but there aren't any posts by %s yet."
+msgstr "Извините, но у автора %s еще нет записей."
+
+#: layouts/archive.php:35
+msgid "No posts found."
+msgstr "Не найдено записей."
+
+#: layouts/attachment.php:10
+#, php-format
+msgid "Published by %s on %s"
+msgstr "Опубликовано автором %s в %s"
+
+#: layouts/attachment.php:15
+#, php-format
+msgid "Full size is %s pixels."
+msgstr "Оригинальный размер - %s пикселей."
+
+#: layouts/attachment.php:18
+msgid "Link to full-size image"
+msgstr "Ссылка на изображение оригинального размера"
+
+#: layouts/attachment.php:32
+msgid "Edit this attachment."
+msgstr "Редактировать это вложение."
+
+#: layouts/comments.php:6
+#, php-format
+msgid "Comments (%s)"
+msgstr "Комментарии (%s)"
+
+#: layouts/comments.php:6
+msgid "Comments are closed"
+msgstr "Комментарии закрыты"
+
+#: layouts/comments.php:47
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: layouts/comments.php:49
+msgid "Edit"
+msgstr "Редактировать"
+
+#: layouts/comments.php:59
+msgid "Reply"
+msgstr "Ответить"
+
+#: layouts/comments.php:63
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: layouts/comments.php:90
+msgid "Cancel"
+msgstr "Отменить"
+
+#: layouts/comments.php:133
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: layouts/comments.php:136
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Вы должны <a href=\"%s\">войти</a> чтобы оставить комментарий."
+
+#: layouts/comments.php:146
+#, php-format
+msgid "Logged in as <a href=\"%s\">%s</a>."
+msgstr "Зашел как <a href=\"%s\">%s</a>."
+
+#: layouts/comments.php:146
+msgid "Log out of this account"
+msgstr "Выйти из этого аккаунта"
+
+#: layouts/comments.php:146
+msgid "Log out &raquo;"
+msgstr "Выход &raquo;"
+
+#: layouts/comments.php:154
+msgid "Name"
+msgstr "Имя"
+
+#: layouts/comments.php:159
+msgid "E-mail"
+msgstr "E-mail"
+
+#: layouts/comments.php:164
+msgid "Website"
+msgstr "Веб-сайт"
+
+#: layouts/comments.php:174
+msgid "Submit Comment"
+msgstr "Отправить комментарий"
+
+#: layouts/index.php:11
+msgid "Not Found"
+msgstr "Не Найдено "
+
+#: layouts/index.php:12
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Извините, но здесь нет того, что вы ищете."
+
+#: layouts/search.php:5 layouts/widgets/search.php:22
+msgid "Search Results"
+msgstr "Результаты Поиска"
+
+#: layouts/search.php:13
+msgid "No posts found. Try a different search?"
+msgstr "Записей не найдено. Попробуйте изменить параметры поиска."
+
+#: layouts/single.php:19
+#, php-format
+msgid "<a href=\"%s\">Trackback</a> from your site."
+msgstr "<a href=\"%s\">Trackback</a> вашего сайта."
+
+#: layouts/widgets/rss.php:4
+msgid "Read feed"
+msgstr "Читать ленту "
+
+#: layouts/widgets/search.php:14
+msgid "search..."
+msgstr "искать..."
+
+#: layouts/widgets/search.php:22
+msgid "More Results"
+msgstr "Еще Результаты "
+
+#: layouts/widgets/search.php:22
+msgid "No results found"
+msgstr "Не найдено результатов "
+
+#: widgets/breadcrumbs/breadcrumbs.php:106
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: widgets/breadcrumbs/breadcrumbs.php:110
+msgid "Home title:"
+msgstr "Заголовок Главной: "
+
+# not used in all themes
+msgid "Written by"
+msgstr "Написано"
+
+msgid "Published by"
+msgstr "Опубликовано"
+
+msgid "Posted in"
+msgstr "Добавлено в "
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Tags"
+msgstr "Метки"
+
+msgid "Categories"
+msgstr "Рубрики"
