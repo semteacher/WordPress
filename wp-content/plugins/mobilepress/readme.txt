@@ -2,8 +2,8 @@
 Contributors: tylerreed
 Tags: wordpress mobile, mobile themes, mobilepress, mobile plugin, iphone, android, cell phone, cellphone, handset, nokia, motorola, att, sprint, verizon, blackberry, palm, windows ce, opera, operamini, opera mini, google, yahoo, plugin, comments, posts
 Requires at least: 2.3
-Tested up to: 3.5.1
-Stable tag: 1.2.1
+Tested up to: 3.6
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,9 @@ If you have custom themes, please back up before updating to MobilePress 1.2.
 You can do so by creating a new directory: /wp-content/mobilepress/themes/ and copying all existing themes into the new directory.
 
 == Changelog ==
+
+= 1.2.2 =
+* Minor changes
 
 = 1.2.1 =
 * Bug Fix: WordPress front page settings overrides MobilePress front page settings.
