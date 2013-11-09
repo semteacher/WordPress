@@ -14,7 +14,7 @@ if (!defined('URE_PLUGIN_URL')) {
 
 <div class="has-sidebar-content">
 <?php
-						$this->display_box_start(__('Select Role and change its capabilities list', 'ure'), 'min-width:800px;');
+						$this->display_box_start(__('Select Role and change its capabilities list', 'ure'), 'min-width:820px;');
 ?>
     <div style="float: left;"><?php echo __('Select Role:', 'ure').' '.$this->role_select_html; ?></div>
 <?php
