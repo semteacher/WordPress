@@ -16,7 +16,7 @@ function sql_connect()
   $this->conn_id = mysql_connect($this->sql_host,$this->sql_login,$this->sql_passwd);
   mysql_select_db($this->sql_database);
   //mysql_query('SET NAMES cp1251', $this->conn_id);
-  mysql_query('SET NAMES UTF-8', $this->conn_id);
+  mysql_query('SET NAMES utf8', $this->conn_id);
  }
 
 function sql_execute()
