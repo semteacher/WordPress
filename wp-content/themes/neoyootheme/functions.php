@@ -7,7 +7,8 @@
 */
 
 // load config
-require_once(dirname(__FILE__).'/config.php');include'warp/menus/init.php';
+require_once(dirname(__FILE__).'/config.php');
+//include'warp/menus/init.php';//TDMU - disable to prevent 403 forbiden error in header
 
 require_once(dirname(__FILE__).'/default-derwidget.php');
 
